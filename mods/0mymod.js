@@ -16,3 +16,13 @@ elements.4amino2methyl1naphthol = {
     tempHigh: 280,
     stateHigh: "smoke",
 }
+elements.lithium = {
+    color: ["#dadbdd"],
+    behavior: behaviors.WALL,
+    catogory: "solids",
+    state: "solids",
+    density: 10,
+    tempHigh: 180,
+    stateHigh: "moltenlithium"
+}
+elements.moltenlithium = 
