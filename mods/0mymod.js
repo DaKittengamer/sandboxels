@@ -7,3 +7,12 @@ elements.decamethyldizincocene = {
     tempHigh: 110,
     stateHigh: "smoke",
 }
+elements.4amino2methyl1naphthol = {
+    color: ["#ffffff"],
+    bahavior: behaviors.POWDER,
+    catogory: "powders",
+    state: "powders",
+    density: 10,
+    tempHigh: 280,
+    stateHigh: "smoke",
+}
