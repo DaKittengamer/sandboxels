@@ -5,5 +5,5 @@ elements.decamethyldizincocene = {
     state: "solid",
     density: 2500,
     tempHigh: 110,
-    stateHigh: "air",
+    stateHigh: "smoke",
 }
