@@ -163,3 +163,35 @@ elements.solidfluorine = {
         "hyrdrogen": {elem1: "explosion"},
     },
 }
+elements.silicon = {
+    color: ["#6a89a7"],
+    behavior: behaviors.WALL,
+    catogory: "solids",
+    state: "solid",
+    density: 10,
+    temp: 20,
+    tempHigh: 1414,
+    stateHigh: "liquidsilicon",
+}
+elements.liquidsilicon = {
+    color: ["#fafafa"],
+    behavior: behaviors.LIQUID,
+    catogory: "liquids",
+    state: "liquid",
+    density: 10,
+    temp: 20,
+    tempLow: 1415,
+    stateLow: "silicon",
+    tempHigh: 3265,
+    stateHigh: "silicongas",
+}
+elements.silicongas = {
+    color: ["#000000"],
+    behavior: behaviors.GAS,
+    catogory: "gases",
+    state: "gas",
+    density: 10,
+    temp: 1500,
+    tempLow: 1416,
+    stateLow: "liquidsilicon",
+}
