@@ -125,3 +125,11 @@ elements.carbon = {
     "carbon": {elem1: "carbon", elem2: "carbon"},
     },
 }
+elements.fluorinegas = {
+    color: ["#ffff84", "#dfff00"],
+    behavior: behaviors.GAS,
+    catogory: "gases",
+    state: "gas",
+    density: 10,
+    temp: 20,
+}
