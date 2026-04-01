@@ -195,3 +195,16 @@ elements.silicongas = {
     tempLow: 1416,
     stateLow: "liquidsilicon",
 }
+elements.copperiisulfate = {
+    color: ["#0165fc"],
+    behavior: behaviors.WALL,
+    catogory: "solids",
+    state: "solid",
+    density: 10,
+    temp: 20,
+    tempHigh: 110,
+    stateHigh: "smoke",
+    reactions: {
+        "algae": {elem1: "slime"},
+    },
+}
