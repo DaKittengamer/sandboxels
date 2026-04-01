@@ -22,7 +22,26 @@ elements.lithium = {
     catogory: "solids",
     state: "solids",
     density: 10,
-    tempHigh: 180,
-    stateHigh: "moltenlithium"
+    tempHigh: 181,
+    stateHigh: "liquidlithium"
 }
-elements.moltenlithium = 
+elements.liquidlithium = {
+    color: ["#dadbdd"],
+    behavior: behaviors.LIQUID,
+    catogory: "liquids",
+    state: "liquids",
+    density: 10,
+    tempLow: 180,
+    stateLow: "lithium",
+    tempHigh: 1344,
+    stateHigh: "lithiumgas",
+}
+elements.lithiumgas = {
+    color: ["#000000"],
+    behavior: behaviors.GAS,
+    catogory: "gases",
+    state: "gas",
+    density: 10,
+    tempLow: 1343,
+    stateLow: "liquidlithium",
+}
