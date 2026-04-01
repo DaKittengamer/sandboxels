@@ -121,9 +121,6 @@ elements.carbon = {
     state: "solid",
     density: 10,
     temp: 20,
-    reactions: {
-    "carbon": {elem1: "carbon", elem2: "carbon"},
-    },
 }
 elements.fluorinegas = {
     color: ["#ffff84", "#dfff00"],
@@ -134,6 +131,9 @@ elements.fluorinegas = {
     temp: 20,
     tempLow: -188,
     stateLow: "liquidfluorine",
+    reactions: {
+        "hydrogen": {elem1: "explosion"},
+    },
 }
 elements.liquidfluorine = {
     color: ["#ffed29"],
@@ -146,6 +146,9 @@ elements.liquidfluorine = {
     stateHigh: "fluorinegas",
     tempLow: -220,
     stateLow: "solidfluorine",
+    reactions: {
+        "hydrogen": {elem1: "explosion"},
+    },
 }
 elements.solidfluorine = {
     color: ["#ffed29"],
@@ -156,4 +159,7 @@ elements.solidfluorine = {
     temp: -250,
     tempHigh: -180,
     stateHigh: "liquidfluorine",
+    reactions: {
+        "hyrdrogen": {elem1: "explosion"},
+    },
 }
