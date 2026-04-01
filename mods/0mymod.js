@@ -6,6 +6,7 @@ elements.decamethyldizincocene = {
     density: 10,
     tempHigh: 110,
     stateHigh: "smoke",
+    temp: 55,
 }
 elements.4amino2methyl1naphthol = {
     color: ["#ffffff"],
@@ -15,6 +16,7 @@ elements.4amino2methyl1naphthol = {
     density: 10,
     tempHigh: 280,
     stateHigh: "smoke",
+    temp: 140,
 }
 elements.lithium = {
     color: ["#dadbdd"],
@@ -22,8 +24,9 @@ elements.lithium = {
     catogory: "solids",
     state: "solids",
     density: 10,
-    tempHigh: 181,
-    stateHigh: "liquidlithium"
+    tempHigh: 180,
+    stateHigh: "liquidlithium",
+    temp: 90,
 }
 elements.liquidlithium = {
     color: ["#dadbdd"],
@@ -31,10 +34,11 @@ elements.liquidlithium = {
     catogory: "liquids",
     state: "liquids",
     density: 10,
-    tempLow: 180,
+    tempLow: 181,
     stateLow: "lithium",
     tempHigh: 1344,
     stateHigh: "lithiumgas",
+    temp: 700,
 }
 elements.lithiumgas = {
     color: ["#000000"],
@@ -44,4 +48,5 @@ elements.lithiumgas = {
     density: 10,
     tempLow: 1343,
     stateLow: "liquidlithium",
+    temp: 1500,
 }
