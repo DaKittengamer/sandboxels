@@ -160,7 +160,7 @@ elements.solidfluorine = {
     tempHigh: -180,
     stateHigh: "liquidfluorine",
     reactions: {
-        "hyrdrogen": {elem1: "explosion"},
+        "hydrogen": {elem1: "explosion"},
     },
 }
 elements.silicon = {
