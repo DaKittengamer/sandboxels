@@ -6,7 +6,7 @@ elements.decamethyldizincocene = {
     density: 10,
     tempHigh: 110,
     stateHigh: "smoke",
-    temp: 55,
+    temp: 20,
 }
 elements.fouraminotwomethylonenaphthol = {
     color: ["#ffffff"],
@@ -16,7 +16,7 @@ elements.fouraminotwomethylonenaphthol = {
     density: 10,
     tempHigh: 280,
     stateHigh: "smoke",
-    temp: 140,
+    temp: 20,
 }
 elements.lithium = {
     color: ["#dadbdd"],
@@ -26,7 +26,7 @@ elements.lithium = {
     density: 10,
     tempHigh: 180,
     stateHigh: "liquidlithium",
-    temp: 90,
+    temp: 20,
 }
 elements.liquidlithium = {
     color: ["#dadbdd"],
@@ -49,4 +49,36 @@ elements.lithiumgas = {
     tempLow: 1343,
     stateLow: "liquidlithium",
     temp: 1500,
+}
+elements.beryllium = {
+    color: ["#71797e"],
+    behavior: behaviors.WALL,
+    catogory: "solids",
+    state: "solid",
+    density: 10,
+    tempHigh: 1287,
+    stateHigh: "liquidberyllium",
+    temp: 20,
+}
+elements.liquidberyllium = {
+    color: ["#dadbdd"],
+    behavior: behaviors.LIQUID,
+    catogory: "liquids",
+    state: "liquid",
+    density: 10,
+    tempLow: 1288,
+    stateLow: "beryllium",
+    tempHigh: 2469,
+    stateHigh: "berylliumgas",
+    temp: 1750,
+}
+elements.berylliumgas = {
+    color: ["#000000"],
+    behavior: behaviors.GAS,
+    catogory: "gases",
+    state: "gas",
+    density: 10,
+    tempLow: 2470,
+    stateLow: "liquidberyllium",
+    temp: 3000,
 }
