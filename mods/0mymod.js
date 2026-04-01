@@ -132,4 +132,28 @@ elements.fluorinegas = {
     state: "gas",
     density: 10,
     temp: 20,
+    tempLow: -188,
+    stateLow: "liquidfluorine",
+}
+elements.liquidfluorine = {
+    color: ["#ffed29"],
+    behavior: behaviors.LIQUID,
+    catogory: "liquids",
+    state: "liquid",
+    density: 10,
+    temp: -200,
+    tempHigh: -187,
+    stateHigh: "fluorinegas",
+    tempLow: -220,
+    stateLow: "solidfluorine",
+}
+elements.solidfluorine = {
+    color: ["#ffed29"],
+    behavior: behaviors.WALL,
+    catogory: "solids",
+    state: "solid",
+    density: 10,
+    temp: -250,
+    tempHigh: -180,
+    stateHigh: "liquidfluorine",
 }
