@@ -114,3 +114,14 @@ elements.borongas = {
     stateLow: "liquidboron",
     temp: 3000,
 }
+elements.carbon = {
+    color: ["#232323"],
+    behavior: behaviors.WALL,
+    catogory: "solids",
+    state: "solid",
+    density: 10,
+    temp: 20,
+    reactions: {
+    "carbon": {elem1: "carbon", elem2: "carbon"},
+    },
+}
