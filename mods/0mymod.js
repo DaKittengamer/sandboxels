@@ -82,3 +82,35 @@ elements.berylliumgas = {
     stateLow: "liquidberyllium",
     temp: 3000,
 }
+elements.boron = {
+    color: ["#000000", "#333333", "#3a3a3a"],
+    behavior: behaviors.WALL,
+    catogory: "solids",
+    state: "solid",
+    density: 10,
+    tempHigh: 2076,
+    stateHigh: "liquidboron",
+    temp: 20,
+}
+elements.liquidboron = {
+    color: ["#ffd865", "#ffdd00"],
+    behavior: behaviors.LIQUID,
+    catogory: "liquids",
+    state: "liquid",
+    density: 10,
+    tempLow: 2075,
+    stateLow: "boron",
+    tempHigh: 3927,
+    stateHigh: "borongas",
+    temp: 2750,
+}
+elements.borongas = {
+    color: ["#000000"],
+    behavior: behaviors.GAS,
+    catogory: "gases",
+    state: "gas",
+    density: 10,
+    tempLow: 2751,
+    stateLow: "liquidboron",
+    temp: 3000,
+}
