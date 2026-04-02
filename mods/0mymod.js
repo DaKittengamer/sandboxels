@@ -290,5 +290,9 @@ elements.liquidgeranium = {
 elements.germaniumgas = {
     color: ["#000000"],
     behavior: behaviors.GAS,
-    
+    catogory: "gases",
+    state: "gas",
+    temp: 3000,
+    tempLow: 2834,
+    stateLow: "liquidgermanium",
 }
