@@ -256,6 +256,14 @@ elements.liquidcalifornium = {
     temp: 1200,
     tempLow: 901,
     stateLow: "californium",
-    tempHigh: 1470,
-    stateHigh: "californiumgas",
+    reactions: {
+        "oxygen": {elem1:"dicaliforniumtrioxide",elem2:null},
+    },
+}
+elements.dicaliforniumtrioxide = {
+    color: ["#9acd32"],
+    behavior: behaviors.WALL,
+    catogory: "solids",
+    state: "solid",
+    temp: 1400,
 }
