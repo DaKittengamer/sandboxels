@@ -296,3 +296,11 @@ elements.germaniumgas = {
     tempLow: 2834,
     stateLow: "liquidgermanium",
 }
+elements.neodymium = {
+    color: ["#c0c0c0"],
+    behavior: behaviors.WALL,
+    catogory: "solids",
+    state: "solid",
+    temp: 20,
+    tempHigh: 
+}
