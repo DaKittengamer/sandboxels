@@ -229,6 +229,7 @@ elements.liquidholmium = {
     stateLow: "holmium",
     tempHigh: 2600,
     stateHigh: "holmiumgas",
+    density: 10,
 }
 elements.holmiumgas = {
     color: ["#fff200"],
@@ -238,6 +239,7 @@ elements.holmiumgas = {
     temp: 3000,
     tempLow: 2601,
     stateLow: "liquidholmium",
+    density: 10,
 }
 elements.californium = {
     color: ["#dadbdd"],
@@ -247,6 +249,7 @@ elements.californium = {
     temp: 20,
     tempHigh: 900,
     stateHigh: "liquidcalifornium",
+    density: 10,
 }
 elements.liquidcalifornium = {
     color: ["#88e788", "#008000", "#06402b"],
@@ -259,6 +262,7 @@ elements.liquidcalifornium = {
     reactions: {
         "oxygen": {elem1:"dicaliforniumtrioxide",elem2:null},
     },
+    density: 10,
 }
 elements.dicaliforniumtrioxide = {
     color: ["#9acd32"],
@@ -266,6 +270,7 @@ elements.dicaliforniumtrioxide = {
     catogory: "solids",
     state: "solid",
     temp: 1400,
+    density: 10,
 }
 elements.germanium = {
     color: ["#d3d3d3"],
@@ -275,6 +280,7 @@ elements.germanium = {
     temp: 20,
     tempHigh: 938,
     stateHigh: "liquidgermanium",
+    density: 10,
 }
 elements.liquidgeranium = {
     color: ["#dadbdd", "#c0c0c0"],
@@ -286,6 +292,7 @@ elements.liquidgeranium = {
     stateLow: "germanium",
     tempHigh: 2833,
     stateHigh: "germaniumgas",
+    density: 10,
 }
 elements.germaniumgas = {
     color: ["#000000"],
@@ -295,6 +302,7 @@ elements.germaniumgas = {
     temp: 3000,
     tempLow: 2834,
     stateLow: "liquidgermanium",
+    density: 10,
 }
 elements.neodymium = {
     color: ["#c0c0c0"],
@@ -304,6 +312,7 @@ elements.neodymium = {
     temp: 20,
     tempHigh: 1022,
     stateHigh: "liquidneodymium",
+    density: 10,
 }
 elements.liquidneodynmium = {
     color: ["#er0078", "#d3d3ff"],
@@ -315,7 +324,15 @@ elements.liquidneodynmium = {
     stateLow: "neodymium",
     tempHigh: 3074,
     stateHigh: "neodymiumgas",
+    density: 10,
 }
 elements.neodymiumgas = {
     color: ["#000000"],
+    behavior: behaviors.GAS,
+    catogory: "gases",
+    state: "gas",
+    temp: 3250,
+    density: 10,
+    tempLow: 3075,
+    stateLow: "liquidneodymium",
 }
