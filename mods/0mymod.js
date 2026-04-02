@@ -317,5 +317,5 @@ elements.liquidneodynmium = {
     stateHigh: "neodymiumgas",
 }
 elements.neodymiumgas = {
-    color: ["#000000
+    color: ["#000000"],
 }
