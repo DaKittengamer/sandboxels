@@ -302,5 +302,20 @@ elements.neodymium = {
     catogory: "solids",
     state: "solid",
     temp: 20,
-    tempHigh: 
+    tempHigh: 1022,
+    stateHigh: "liquidneodymium",
+}
+elements.liquidneodynmium = {
+    color: ["#er0078", "#d3d3ff"],
+    behavior: behaviors.LIQUID,
+    catogory: "liquids",
+    state: "liquids",
+    temp: 2500,
+    tempLow: 1023,
+    stateLow: "neodymium",
+    tempHigh: 3074,
+    stateHigh: "neodymiumgas",
+}
+elements.neodymiumgas = {
+    color: ["#000000
 }
