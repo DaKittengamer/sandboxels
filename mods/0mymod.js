@@ -132,7 +132,7 @@ elements.fluorinegas = {
     tempLow: -188,
     stateLow: "liquidfluorine",
     reactions: {
-        "hydrogen": {elem1: "explosion"},
+        "hydrogen": {elem1: "explosion", elem2:"null"},
     },
 }
 elements.liquidfluorine = {
@@ -147,7 +147,7 @@ elements.liquidfluorine = {
     tempLow: -220,
     stateLow: "solidfluorine",
     reactions: {
-        "hydrogen": {elem1: "explosion"},
+        "hydrogen": {elem1: "explosion", elem2:"null"},
     },
 }
 elements.solidfluorine = {
@@ -160,7 +160,7 @@ elements.solidfluorine = {
     tempHigh: -180,
     stateHigh: "liquidfluorine",
     reactions: {
-        "hydrogen": {elem1: "explosion"},
+        "hydrogen": {elem1: "explosion", elem2:"null"},
     },
 }
 elements.silicon = {
@@ -206,7 +206,7 @@ elements.copperiisulfate = {
     tempHigh: 110,
     stateHigh: "smoke",
     reactions: {
-        "algae": {elem1: "slime"},
+        "algae": {elem1: "slime", elem2:"null"},
     },
 }
 elements.holmium = {
@@ -249,5 +249,13 @@ elements.californium = {
     stateHigh: "liquidcalifornium",
 }
 elements.liquidcalifornium = {
-    color: ["#88e788"
+    color: ["#88e788", "#008000", "#06402b"],
+    behavior: behaviors.LIQUID,
+    catogory: "liquids",
+    state: "liquid",
+    temp: 1200,
+    tempLow: 901,
+    stateLow: "californium",
+    tempHigh: 1470,
+    stateHigh: "californiumgas",
 }
