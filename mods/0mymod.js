@@ -267,3 +267,28 @@ elements.dicaliforniumtrioxide = {
     state: "solid",
     temp: 1400,
 }
+elements.germanium = {
+    color: ["#d3d3d3"],
+    behavior: behaviors.WALL,
+    catogory: "solids",
+    state: "solid",
+    temp: 20,
+    tempHigh: 938,
+    stateHigh: "liquidgermanium",
+}
+elements.liquidgeranium = {
+    color: ["#dadbdd", "#c0c0c0"],
+    behavior: behaviors.LIQUID,
+    catogory: "liquids",
+    state: "liquid",
+    temp: 1500,
+    tempLow: 939,
+    stateLow: "germanium",
+    tempHigh: 2833,
+    stateHigh: "germaniumgas",
+}
+elements.germaniumgas = {
+    color: ["#000000"],
+    behavior: behaviors.GAS,
+    
+}
