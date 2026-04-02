@@ -172,6 +172,7 @@ elements.silicon = {
     temp: 20,
     tempHigh: 1414,
     stateHigh: "liquidsilicon",
+    conduct: 0.04,
 }
 elements.liquidsilicon = {
     color: ["#fafafa"],
@@ -207,4 +208,34 @@ elements.copperiisulfate = {
     reactions: {
         "algae": {elem1: "slime"},
     },
+}
+elements.holmium = {
+    color: ["#dadbdd"],
+    behavior: behaviors.WALL,
+    catogory: "solids",
+    state: "solid",
+    density: 10,
+    temp: 20,
+    tempHigh: 1461,
+    stateHigh: "liquidholmium",
+}
+elements.liquidholmium = {
+    color: ["#dadbdd"],
+    behavior: behaviors.LIQUID,
+    catogory: "liquids",
+    state: "liquid",
+    temp: 2000,
+    tempLow: 1462,
+    stateLow: "holmium",
+    tempHigh: 2600,
+    stateHigh: "holmiumgas",
+}
+elements.holmiumgas = {
+    color: ["#fff200"],
+    behavior: behaviors.GAS,
+    catogory: "gases",
+    state: "gas",
+    temp: 3000,
+    tempLow: 2601,
+    stateLow: "liquidholmium",
 }
