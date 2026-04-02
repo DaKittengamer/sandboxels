@@ -336,3 +336,14 @@ elements.neodymiumgas = {
     tempLow: 3075,
     stateLow: "liquidneodymium",
 }
+elements.helium.reactions: {
+    "sun": {elem1: "heliumthree",elem2:null},
+},
+elements.heliumthree = {
+    color: ["#000000"],
+    behavior: behaviors.GAS,
+    catogory: "gases",
+    state: "gas",
+    temp: 20,
+    density: 10,
+}
