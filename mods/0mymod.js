@@ -132,7 +132,7 @@ elements.fluorinegas = {
     tempLow: -188,
     stateLow: "liquidfluorine",
     reactions: {
-        "hydrogen": {elem1: "explosion", elem2:"null"},
+        "hydrogen": {elem1: "explosion",elem2:null},
     },
 }
 elements.liquidfluorine = {
@@ -147,7 +147,7 @@ elements.liquidfluorine = {
     tempLow: -220,
     stateLow: "solidfluorine",
     reactions: {
-        "hydrogen": {elem1: "explosion", elem2:"null"},
+        "hydrogen": {elem1: "explosion",elem2:null},
     },
 }
 elements.solidfluorine = {
@@ -160,7 +160,7 @@ elements.solidfluorine = {
     tempHigh: -180,
     stateHigh: "liquidfluorine",
     reactions: {
-        "hydrogen": {elem1: "explosion", elem2:"null"},
+        "hydrogen": {elem1: "explosion",elem2:null},
     },
 }
 elements.silicon = {
@@ -206,7 +206,7 @@ elements.copperiisulfate = {
     tempHigh: 110,
     stateHigh: "smoke",
     reactions: {
-        "algae": {elem1: "slime", elem2:"null"},
+        "algae": {elem1: "slime",elem2:null},
     },
 }
 elements.holmium = {
