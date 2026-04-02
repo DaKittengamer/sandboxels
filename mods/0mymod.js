@@ -1,5 +1,5 @@
 elements.decamethyldizincocene = {
-    color: ["#000000"],
+    color: ["#010101"],
     behavior: behaviors.WALL,
     category: "solids",
     state: "solid",
@@ -314,7 +314,7 @@ elements.neodymium = {
     stateHigh: "liquidneodymium",
     density: 10,
 }
-elements.liquidneodynmium = {
+elements.liquidneodymium = {
     color: ["#er0078", "#d3d3ff"],
     behavior: behaviors.LIQUID,
     catogory: "liquids",
