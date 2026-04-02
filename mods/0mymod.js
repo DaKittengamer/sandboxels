@@ -239,3 +239,15 @@ elements.holmiumgas = {
     tempLow: 2601,
     stateLow: "liquidholmium",
 }
+elements.californium = {
+    color: ["#dadbdd"],
+    behavior: behaviors.WALL,
+    catogory: "solids",
+    state: "solid",
+    temp: 20,
+    tempHigh: 900,
+    stateHigh: "liquidcalifornium",
+}
+elements.liquidcalifornium = {
+    color: ["#88e788"
+}
