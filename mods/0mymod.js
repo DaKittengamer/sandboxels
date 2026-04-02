@@ -1,5 +1,5 @@
 elements.decamethyldizincocene = {
-    color: ["#111111"],
+    color: ["#232323"],
     behavior: behaviors.WALL,
     category: "solids",
     state: "solid",
