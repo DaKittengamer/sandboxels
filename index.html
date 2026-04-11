@@ -864,12 +864,19 @@ SEEDRISE: function(pixel) {
 		// charge - charge of the element on creation
 		// hardness - chance of resisting damage (0-1)
 		elements = {
+			"asparagus": {
+				color: ["#008000", "#ffffff", "#800080"],
+				behavior: behaviors.POWDER,
+				catogory: "powders",
+				density: 10,
+				state: "powder",
+				temp: 20
+			},
 "decamethyldizincocene": {
     color: "#232323",
     behavior: behaviors.WALL,
-    category: "solids",
+	category: "solids",
     state: "solid",
-    density: 10,
     tempHigh: 110,
     stateHigh: "smoke",
     temp: 20
