@@ -864,60 +864,60 @@ SEEDRISE: function(pixel) {
 		// charge - charge of the element on creation
 		// hardness - chance of resisting damage (0-1)
 		elements = {
-			“orangejuice”: {
-				color: [“#ffff84”, “#ff5c00”, “#ffae42”],
-				behavior: behaviors.LIQUID,
-				category: “food”,
-				density: 1044,
-				state: “liquid”,
-				temp: 20,
-				tempHigh: 100,
-				tempLow: -2,
-				stateHigh: “steam”,
-				stateLow: “frozenorangejuice”
-			},
-			”frozenorangejuice”: {
-				color: “#ffae42”,
-				behavior: behaviors.SOLID,
-				category: “solids”,
-				density: 1038,
-				state: “solid”,
-				temp: -5,
-				tempHigh: -1,
-				stateHigh: “orangejuice”
-			},
-			“orange”: {
-				color: [“#ffae42”, “#ffb343”, “#fcb001”],
-				behavior: behaviors.POWDER,
-				category: “food”,
-				density: 544,
-				state: “solid”,
-				temp: 20
-			},
-			"brusselssprouts": {
-				color: ["#66ff00", "#008000", "#06402b"],
-				behavior: behaviors.POWDER,
-				catogory: "food",
-				density: 10,
-				state: "solid",
-				temp: 20
-			},
-			"beetroot": {
-				color: ["#590016", "#8b0000"],
-				behavior: behaviors.POWDER,
-				catogory: "food",
-				density: 10,
-				state: "solid",
-				temp: 20
-			},
-			"asparagus": {
-				color: ["#008000", "#ffffff", "#800080"],
-				behavior: behaviors.POWDER,
-				catogory: "food",
-				density: 10,
-				state: "solid",
-				temp: 20
-			},
+“orangejuice”: {
+	color: [“#ffff84”, “#ff5c00”, “#ffae42”],
+	behavior: behaviors.LIQUID,
+	category: “food”,
+	density: 1044,
+	state: “liquid”,
+	temp: 20,
+	tempHigh: 100,
+	tempLow: -2,
+	stateHigh: “steam”,
+	stateLow: “frozenorangejuice”
+},
+”frozenorangejuice”: {
+	color: “#ffae42”,
+	behavior: behaviors.SOLID,
+	category: “solids”,
+	density: 1038,
+	state: “solid”,
+	temp: -5,
+	tempHigh: -1,
+	stateHigh: “orangejuice”
+},
+“orange”: {
+	color: [“#ffae42”, “#ffb343”, “#fcb001”],
+	behavior: behaviors.POWDER,
+	category: “food”,
+	density: 544,
+	state: “solid”,
+	temp: 20
+},
+"brusselssprouts": {
+	color: ["#66ff00", "#008000", "#06402b"],
+	behavior: behaviors.POWDER,
+	catogory: "food",
+	density: 10,
+	state: "solid",
+	temp: 20
+},
+"beetroot": {
+	color: ["#590016", "#8b0000"],
+	behavior: behaviors.POWDER,
+	catogory: "food",
+	density: 10,
+	state: "solid",
+	temp: 20
+},
+"asparagus": {
+	color: ["#008000", "#ffffff", "#800080"],
+	behavior: behaviors.POWDER,
+	catogory: "food",
+	density: 10,
+	state: "solid",
+	temp: 20
+},
 "decamethyldizincocene": {
     color: "#232323",
     behavior: behaviors.WALL,
@@ -1276,6 +1276,7 @@ SEEDRISE: function(pixel) {
 		"slush":{elem1:"wet_sand",elem2:null},
 		"soda":{elem1:"wet_sand",elem2:null},
 		"orangejuice":{elem1:"wet_sand",elem2:null},
+		"grapejuice":{elem1:"wet_sand",elem2:null},
 		"milk":{elem1:"wet_sand",elem2:null},
 		"chocolate_milk":{elem1:"wet_sand",elem2:null},
 		"fruit_milk":{elem1:"wet_sand",elem2:null},
@@ -1920,6 +1921,7 @@ SEEDRISE: function(pixel) {
 		"slush":{elem1:"mud",elem2:null},
 		"soda":{elem1:"mud",elem2:null},
 		"orangejuice":{elem1:"mud",elem2:null},
+		"grapejuice":{elem1:"mud",elem2:null},
 		"milk":{elem1:"mud",elem2:null},
 		"chocolate_milk":{elem1:"mud",elem2:null},
 		"fruit_milk":{elem1:"mud",elem2:null},
@@ -2829,6 +2831,7 @@ SEEDRISE: function(pixel) {
 		"seltzer": { elem1: "dough", elem2: null },
 		"pool_water": { elem1: "dough", elem2: null },
 		"orangejuice": { elem1: "dough", elem2: null },
+		"grapejuice": { elem1: "dough", elem2: null },
 		"vinegar": { elem1: "dough", elem2: null },
 		"yolk": { elem1: "batter", elem2: null },
 		"yogurt": { elem1: "batter", elem2: null },
@@ -3973,6 +3976,7 @@ SEEDRISE: function(pixel) {
 		"honey": { elem2:null, chance:0.1, func:behaviors.FEEDPIXEL },
 		"soda": { elem2:null, chance:0.15, func:behaviors.FEEDPIXEL },
 		"orangejuice": { elem2:null, chance:0.15, func:behaviors.FEEDPIXEL },
+		"grapejuice": { elem2:null, chance:0.15, func:behaviors.FEEDPIXEL },
 		"sugar": { elem2:null, chance:0.1, func:behaviors.FEEDPIXEL },
 		"rotten_meat": { elem2:null, chance:0.05, func:behaviors.FEEDPIXEL },
 		"crumb": { elem2:null, chance:0.05, func:behaviors.FEEDPIXEL },
@@ -4076,7 +4080,8 @@ SEEDRISE: function(pixel) {
 		"bee": { elem2:"dead_bug", chance:0.02 },
 		"bleach": { elem1:null, chance:0.1 },
 		"vinegar": { elem1:null, chance:0.05 },
-		"juice": { elem1:null, chance:0.03 },
+		"orangejuice": { elem1:null, chance:0.03 },
+		"grapejuice": { elem1:null, chance:0.03 },
 		"soap": { elem1:null, chance:0.2 },
 		"rock": { elem1:null, chance:0.2 },
 		"basalt": { elem1:null, chance:0.2 }
@@ -4502,7 +4507,7 @@ SEEDRISE: function(pixel) {
 		"fallout": { elem1:["ash","meat","rotten_meat","cooked_meat"], chance:0.01 },
 		"plague": { elem1:"plague", chance:0.05 },
 		"egg": { elem2:"yolk", chance:0.5, oneway:true },
-		"grape": { elem2:"juice", chance:0.5, color2:"#291824", oneway:true },
+		"grape": { elem2:"grapejuice", chance:0.5, color2:"#291824", oneway:true },
 		"ant": { elem2:"dead_bug", chance:0.05, oneway:true },
 		"spider": { elem2:"dead_bug", oneway:true },
 		"fly": { elem2:"dead_bug", oneway:true },
@@ -8448,7 +8453,7 @@ SEEDRISE: function(pixel) {
 		"coffee": { elem1:"rust", chance:0.0003 },
 		"tea": { elem1:"rust", chance:0.0003 },
 		"broth": { elem1:"rust", chance:0.0003 },
-		"juice": { elem1:"rust", chance:0.0003 },
+		"orangejuice": { elem1:"rust", chance:0.0003 },
 		"nut_milk": { elem1:"rust", chance:0.0003 }
 	},
 	tempHigh: 1538,
@@ -8513,7 +8518,7 @@ SEEDRISE: function(pixel) {
 		"coffee": { elem1:"rust", chance:0.0002 },
 		"tea": { elem1:"rust", chance:0.0002 },
 		"broth": { elem1:"rust", chance:0.0002 },
-		"juice": { elem1:"rust", chance:0.0002 },
+		"orangejuice": { elem1:"rust", chance:0.0002 },
 		"nut_milk": { elem1:"rust", chance:0.0002 }
 	},
 	tempHigh: 1455.5,
@@ -8851,8 +8856,8 @@ SEEDRISE: function(pixel) {
 	color: ["#94A4B0","#AFBBC9","#CCD6E5","#FFFFFF"],
 	behavior: behaviors.LIQUID
 },
-"juice": {
-	color: "#f0bf3d",
+"grapejuice": {
+	color: ["#36013F","910951"],
 	behavior: behaviors.LIQUID,
 	reactions: {
 		"seltzer": { elem1: "soda", elem2: "foam", color1:"#ff9021" },
@@ -8868,10 +8873,6 @@ SEEDRISE: function(pixel) {
 	density: 1054,
 	stain: 0.05,
 	isFood: true
-},
-"juice_ice": {
-	stateHighColorMultiplier: 0.91,
-	breakInto: "slush"
 },
 "broth": {
 	color: "#dbb169",
@@ -8917,7 +8918,8 @@ SEEDRISE: function(pixel) {
 		"melted_chocolate": { elem1:"chocolate_milk", elem2:null },
 		"chocolate": { elem1:"chocolate_milk", elem2:"melted_chocolate", chance:0.05 },
 		"chocolate_powder": { elem1:"chocolate_milk", elem2:"melted_chocolate", chance:0.2 },
-		"juice": { elem1:"fruit_milk", elem2:null, chance:0.05 },
+		"orangejuice": { elem1:"fruit_milk", elem2:null, chance:0.05 },
+		"grapejuice": { elem1:"fruit_milk", elem2:null, chance:0.05 },
 		"soda": { elem1:"pilk", elem2:null, chance:0.1 },
 		"yolk": { elem1:"eggnog", elem2:null, chance:0.1 },
 		"ash": { elem1:"soap", chance:0.1 },
@@ -9107,7 +9109,8 @@ SEEDRISE: function(pixel) {
 		"melted_chocolate": { color1:"#664934", elem2:null },
 		"chocolate": { color1:"#664934", elem2:"melted_chocolate", chance:0.05 },
 		"chocolate_powder": { color1:"#664934", elem2:"melted_chocolate", chance:0.1 },
-		"juice": { elem1:"fruit_milk", elem2:null, chance:0.05 },
+		"orangejuice": { elem1:"fruit_milk", elem2:null, chance:0.05 },
+		"grapejuice": { elem1:"fruit_milk", elem2:null, chance:0.05 },
 		"soda": { elem1:"pilk", elem2:null, chance:0.1 },
 		"yolk": { elem1:"eggnog", elem2:null, chance:0.1 },
 		"caramel": { color1:"#C8B39A", chance:0.05 },
@@ -9358,15 +9361,15 @@ SEEDRISE: function(pixel) {
 	],
 	reactions: {
 		"radiation": { elem1:"explosion", chance:0.1, color1:"#291824" },
-		"rock": { elem1:"juice", chance:0.1, color1:"#291824" },
-		"concrete": { elem1:"juice", chance:0.1, color1:"#291824" },
-		"basalt": { elem1:"juice", chance:0.1, color1:"#291824" },
-		"limestone": { elem1:"juice", chance:0.1, color1:"#291824" },
-		"tuff": { elem1:"juice", chance:0.1, color1:"#291824" },
-		"water": { elem2:"juice", chance:0.005, color2:"#291824" },
-		"sugar_water": { elem2:"juice", chance:0.025, color2:"#291824" },
-		"acid": { elem1:"juice", color1:"#291824" },
-		"acid_gas": { elem1:"juice", color1:"#291824" }
+		"rock": { elem1:"grapejuice", chance:0.1, color1:"#291824" },
+		"concrete": { elem1:"grapejuice", chance:0.1, color1:"#291824" },
+		"basalt": { elem1:"grapejuice", chance:0.1, color1:"#291824" },
+		"limestone": { elem1:"grapejuice", chance:0.1, color1:"#291824" },
+		"tuff": { elem1:"grapejuice", chance:0.1, color1:"#291824" },
+		"water": { elem2:"grapejuice", chance:0.005, color2:"#291824" },
+		"sugar_water": { elem2:"grapejuice", chance:0.025, color2:"#291824" },
+		"acid": { elem1:"grapejuice", color1:"#291824" },
+		"acid_gas": { elem1:"grapejuice", color1:"#291824" }
 	},
 	innerColor: "#cc7492",
 	tempHigh: 256,
@@ -9374,7 +9377,7 @@ SEEDRISE: function(pixel) {
 	category: "food",
 	state: "solid",
 	density: 1154,
-	breakInto: "juice",
+	breakInto: "grapejuice",
 	breakIntoColor: "#291824",
 	ignoreAir: true,
 	isFood: true
@@ -9469,7 +9472,7 @@ SEEDRISE: function(pixel) {
 	burn:1,
 	burnTime:500,
 	burnInto: ["fire","smoke","smoke","steam","ash","carbon_dioxide","alcohol_gas"],
-	breakInto: "juice",
+	breakInto: "slime",
 	breakIntoColor: "#CF9F08",
 	category:"food",
 	state: "solid",
@@ -9780,7 +9783,8 @@ SEEDRISE: function(pixel) {
 		"potato": { elem2:"alcohol", chance:0.005, color2:"#fec400" },
 		"mashed_potato": { elem2:"alcohol", chance:0.005, color2:"#fec400" },
 		"grape": { elem2:"alcohol", chance:0.005, color2:"#7d2a25" },
-		"juice": { elem2:"alcohol", chance:0.015, color2:"#7d2a25" },
+		"orangejuice": { elem2:"alcohol", chance:0.015, color2:"#7d2a25" },
+		"grapejuice": { elem2:"alcohol", chance:0.015, color2:"#7d2a25" },
 		"sugar": { elem2:"alcohol", chance:0.005, color2:"#80724d" },
 		"sugar_water": { elem2:"alcohol", chance:0.005, color2:"#80724d" },
 		"soda": { elem2:"alcohol", chance:0.005, color2:"#80724d" },
@@ -10088,7 +10092,7 @@ SEEDRISE: function(pixel) {
 	tempHigh: 200,
 	stateHigh: ["smoke","sugar"],
 	tempLow: -5,
-	stateLow: ["sugar_ice","sugar_ice","juice_ice"],
+	stateLow: ["sugar_ice","sugar_ice"],
 	category: "food",
 	state: "liquid",
 	density: 1245,
@@ -10100,7 +10104,8 @@ SEEDRISE: function(pixel) {
 	color: "#ededed",
 	behavior: behaviors.POWDER,
 	reactions: {
-		"juice": { elem1:"water", elem2:["carbon_dioxide","foam"] },
+		"orangejuice": { elem1:"water", elem2:["carbon_dioxide","foam"] },
+		"grapejuice": {elem1:"water", elem2:["carbon_dioxide","foam"] },
 		"chlorine": { elem1:["carbon_dioxide","seltzer","salt","salt_water","water"] },
 		"glue": {elem1:"slime", elem2:"slime", chance:0.1},
 		"yogurt": {elem1:"carbon_dioxide", chance:0.01},
@@ -12274,7 +12279,8 @@ SEEDRISE: function(pixel) {
 		"soda": {elem1:"oxidized_copper", elem2:null, color1:["#CB3D3D","#A6292B","#6E1B1B"]},
 		"chocolate_powder": {elem1:"oxidized_copper", elem2:null, color1:["#CB3D3D","#A6292B","#6E1B1B"]},
 		"chocolate_milk": {elem1:"oxidized_copper", elem2:null, color1:["#CB3D3D","#A6292B","#6E1B1B"]},
-		"juice": {elem1:"oxidized_copper", elem2:null, color1:["#CB3D3D","#A6292B","#6E1B1B"]},
+		"grapejuice": {elem1:"oxidized_copper", elem2:null, color1:["#CB3D3D","#A6292B","#6E1B1B"]},
+		"orangejuice": {elem1:"oxidized_copper", elem2:null, color1:["#CB3D3D","#A6292B","#6E1B1B"]},
 		"fruit_milk": {elem1:"oxidized_copper", elem2:null, color1:["#CB3D3D","#A6292B","#6E1B1B"]},
 		"ice_cream": {elem1:"oxidized_copper", elem2:null, color1:["#CB3D3D","#A6292B","#6E1B1B"]},
 	},
@@ -12389,7 +12395,8 @@ SEEDRISE: function(pixel) {
 		"ice": { elem2:"dirty_ice", chance:0.5 },
 		"salt_ice": { elem2:"dirty_ice", chance:0.5 },
 		"soda": { elem2:"rad_steam", chance:0.25 },
-		"juice": { elem2:"rad_steam", chance:0.25 },
+		"orangejuice": { elem2:"rad_steam", chance:0.25 },
+		"grapejuice": { elem2:"rad_steam", chance:0.25 },
 		"broth": { elem2:"rad_steam", chance:0.3 },
 		"tea": { elem2:"rad_steam", chance:0.25 },
 		"coffee": { elem2:"rad_steam", chance:0.25 },
