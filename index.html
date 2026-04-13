@@ -864,6 +864,36 @@ SEEDRISE: function(pixel) {
 		// charge - charge of the element on creation
 		// hardness - chance of resisting damage (0-1)
 		elements = {
+			“orangejuice”: {
+				color: [“#ffff84”, “#ff5c00”, “#ffae42”],
+				behavior: behaviors.LIQUID,
+				category: “food”,
+				density: 1044,
+				state: “liquid”,
+				temp: 20,
+				tempHigh: 100,
+				tempLow: -2,
+				stateHigh: “steam”,
+				stateLow: “frozenorangejuice”
+			},
+			”frozenorangejuice”: {
+				color: “#ffae42”,
+				behavior: behaviors.SOLID,
+				category: “solids”,
+				density: 1038,
+				state: “solid”,
+				temp: -5,
+				tempHigh: -1,
+				stateHigh: “orangejuice”
+			},
+			“orange”: {
+				color: [“#ffae42”, “#ffb343”, “#fcb001”],
+				behavior: behaviors.POWDER,
+				category: “food”,
+				density: 544,
+				state: “solid”,
+				temp: 20
+			},
 			"brusselssprouts": {
 				color: ["#66ff00", "#008000", "#06402b"],
 				behavior: behaviors.POWDER,
@@ -1245,7 +1275,7 @@ SEEDRISE: function(pixel) {
 		"pool_water":{elem1:"wet_sand",elem2:null},
 		"slush":{elem1:"wet_sand",elem2:null},
 		"soda":{elem1:"wet_sand",elem2:null},
-		"juice":{elem1:"wet_sand",elem2:null},
+		"orangejuice":{elem1:"wet_sand",elem2:null},
 		"milk":{elem1:"wet_sand",elem2:null},
 		"chocolate_milk":{elem1:"wet_sand",elem2:null},
 		"fruit_milk":{elem1:"wet_sand",elem2:null},
@@ -1889,7 +1919,7 @@ SEEDRISE: function(pixel) {
 		"pool_water":{elem1:"mud",elem2:null},
 		"slush":{elem1:"mud",elem2:null},
 		"soda":{elem1:"mud",elem2:null},
-		"juice":{elem1:"mud",elem2:null},
+		"orangejuice":{elem1:"mud",elem2:null},
 		"milk":{elem1:"mud",elem2:null},
 		"chocolate_milk":{elem1:"mud",elem2:null},
 		"fruit_milk":{elem1:"mud",elem2:null},
@@ -2798,7 +2828,7 @@ SEEDRISE: function(pixel) {
 		"sugar_water": { elem1: "dough", elem2: null },
 		"seltzer": { elem1: "dough", elem2: null },
 		"pool_water": { elem1: "dough", elem2: null },
-		"juice": { elem1: "dough", elem2: null },
+		"orangejuice": { elem1: "dough", elem2: null },
 		"vinegar": { elem1: "dough", elem2: null },
 		"yolk": { elem1: "batter", elem2: null },
 		"yogurt": { elem1: "batter", elem2: null },
@@ -3942,7 +3972,7 @@ SEEDRISE: function(pixel) {
 		"sugar_water": { elem2:null, chance:0.15, func:behaviors.FEEDPIXEL },
 		"honey": { elem2:null, chance:0.1, func:behaviors.FEEDPIXEL },
 		"soda": { elem2:null, chance:0.15, func:behaviors.FEEDPIXEL },
-		"juice": { elem2:null, chance:0.15, func:behaviors.FEEDPIXEL },
+		"orangejuice": { elem2:null, chance:0.15, func:behaviors.FEEDPIXEL },
 		"sugar": { elem2:null, chance:0.1, func:behaviors.FEEDPIXEL },
 		"rotten_meat": { elem2:null, chance:0.05, func:behaviors.FEEDPIXEL },
 		"crumb": { elem2:null, chance:0.05, func:behaviors.FEEDPIXEL },
@@ -5641,7 +5671,7 @@ SEEDRISE: function(pixel) {
 	},
 	reactions: {
 		"soda": { elem2:null, attr1:{"clone":"pilk"}, chance:0.1 },
-		"juice": { elem2:null, attr1:{"clone":"fruit_milk"}, chance:0.1 },
+		"orangejuice": { elem2:null, attr1:{"clone":"fruit_milk"}, chance:0.1 },
 		"melted_chocolate": { elem2:null, attr1:{"clone":"chocolate_milk"}, chance:0.1 },
 		"yolk": { elem2:null, attr1:{"clone":"eggnog"}, chance:0.1 },
 		"chocolate": { attr1:{"clone":"chocolate_milk"}, chance:0.1 }
@@ -6555,7 +6585,7 @@ SEEDRISE: function(pixel) {
 		"pool_water":{elem1:"clay",elem2:null},
 		"slush":{elem1:"clay",elem2:null},
 		"soda":{elem1:"clay",elem2:null},
-		"juice":{elem1:"clay",elem2:null},
+		"orangejuice":{elem1:"clay",elem2:null},
 		"milk":{elem1:"clay",elem2:null},
 		"chocolate_milk":{elem1:"clay",elem2:null},
 		"fruit_milk":{elem1:"clay",elem2:null},
