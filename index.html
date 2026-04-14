@@ -864,6 +864,141 @@ SEEDRISE: function(pixel) {
 		// charge - charge of the element on creation
 		// hardness - chance of resisting damage (0-1)
 		elements = {
+"cranberry": {
+	color: "#9B1B30",
+	behavior: behaviors.POWDER,
+	category: "food",
+	density: 641,
+	state: "solid",
+	temp: 20,
+	tempHigh: 94,
+	stateHigh: "cranberryjuice",
+	breakInto: ["cranberryjuice"]
+},
+"cranberryjuice": {
+	color: ["#7A1717", "#4D0606"],
+	behavior: behaviors.LIQUID,
+	category: "food",
+	density: 1038,
+	state: "liquid",
+	temp: 20,
+	tempHigh: 100,
+	tempLow: -2,
+	stateHigh: "cranberrysauce",
+	stateLow: "frozencranberryjuice",
+	viscosity: 6.26
+},
+"frozencranberryjuice": {
+	color: "#850101",
+	behavior: behaviors.SOLID,
+	category: "solids",
+	density: 976,
+	state: "solid",
+	temp: -5,
+	tempHigh: -2,
+	stateHigh: "cranberryjuice"
+},
+"cranberrysauce": {
+	color: "#E0115F",
+	behavior: behaviors.LIQUID,
+	category: "food",
+	density: 1170,
+	state: "liquid",
+	temp: 20,
+	tempLow: 0,
+	stateLow: "frozencranberrysauce",
+	viscosity: 2100
+},
+"frozencranberrysauce": {
+	color: "#E0115F",
+	behavior: behaviors.SOLID,
+	category: "solids",
+	state: "solid",
+	temp: -5,
+	tempHigh: 0,
+	stateHigh: "cranberrysauce"
+},
+"apple": {
+	color: ["#B22222", "#D30000"],
+	behavior: behaviors.POWDER,
+	category: "food",
+	density: 770,
+	state: "solid",
+	temp: 20,
+	breakInto: ["applejuice"]
+},
+"applejuice": {
+	color: ["#FFDF00", "#FFBF00"],
+	behavior: behaviors.LIQUID,
+	category: "food",
+	density: 1050,
+	state: "liquid",
+	reactions: {
+		"spice": {  elem1:"applecider"}
+	},
+	temp: 20,
+	viscosity: 4.2
+},
+"applecider": {
+	color: ["#FFBF00", "#D0992E", "#996515"],
+	behavior: behaviors.LIQUID,
+	category: "food",
+	density: 1039,
+	state: "liquid",
+	temp: 20,
+	viscosity: 3.6
+},
+"mountaindew": {
+	color: "#DFFF00",
+	behavior: behaviors.LIQUID,
+	category: "food",
+	density: 1050,
+	state: "liquid",
+	temp: 20,
+	viscosity: 1.5
+},
+"sprite": {
+	color: "#B7C9E2",
+	behavior: behaviors.LIQUID,
+	category: "food",
+	density: 1037,
+	state: "liquid",
+	temp: 20,
+	viscosity: 1
+},
+"fanta": {
+	color: "#FF8300",
+	behavior: behaviors.LIQUID,
+	category: "food",
+	density: 1034,
+	state: "liquid",
+	temp: 20,
+	viscosity: 1
+},
+"broccoli": {
+	color: ["#78A747", "#648959"],
+	behavior: behaviors.POWDER,
+	category: "food",
+	density: 256,
+	state: "solid",
+	temp: 20
+},
+"cauliflower": {
+	color: ["#C3D463", "#E9DCA0", "#FCF2C0"],
+	behavior: behaviors.POWDER,
+	category: "food",
+	density: 297,
+	state: "solid",
+	temp: 20
+},
+"gingersnap": {
+	color: ["#A65000", "#8F5E39", "#C89D74"],
+	behavior: behaviors.POWDER,
+	category: "food",
+	density: 600,
+	state: "solid",
+	temp: 20
+},
 "orangejuice": {
 	color: ["#ffff84", "#ff5c00", "#ffae42"],
 	behavior: behaviors.LIQUID,
