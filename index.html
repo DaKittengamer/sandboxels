@@ -864,6 +864,32 @@ SEEDRISE: function(pixel) {
 		// charge - charge of the element on creation
 		// hardness - chance of resisting damage (0-1)
 		elements = {
+"rawchicken": {
+	color: "FFBEBE",
+	behavior: behaviors.WALL,
+	category: "solids",
+	temp: -10,
+	state: "solid",
+	reactions: {
+		"batter": {elem1:"rawchickennugget", elem2:null}
+	}
+},
+"rawchickennugget" {
+	color: "#FAF0BE",
+	behavior: behaviors.POWDER,
+	category: "other",
+	temp: 20,
+	tempHigh: 74,
+	stateHigh: "chickennugget",
+	state: "solid"
+},
+"chickennugget": {
+	color: "#B27A01",
+	behaviors: behaviors.POWDER,
+	category: "food",
+	temp: 30,
+	state: "solid"
+},
 "cranberry": {
 	color: "#9B1B30",
 	behavior: behaviors.POWDER,
