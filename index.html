@@ -864,6 +864,187 @@ SEEDRISE: function(pixel) {
 		// charge - charge of the element on creation
 		// hardness - chance of resisting damage (0-1)
 		elements = {
+"lanthanum": {
+	color: "#DADBDD",
+	behavior: behaviors.WALL,
+	category: "solids",
+	state: "solid",
+	reactions: {
+		"oxygen": {elem1:"lanthanumoxide", elem2:null},
+		"fluorine": {elem1:"lanthanumflouride", elem2:null}
+},
+temp: 20,
+tempHigh: 920,
+stateHigh: "liquidlanthanum"
+},
+"lanthanumoxide": {
+	color: "#FFFFFF",
+	behavior: behaviors.POWDER,
+	category: "powders",
+	state: "solid",
+	reactions: {
+		"water": {elem1:"lanthanumhydroxide", elem2:null}
+	},
+	temp: 20
+},
+"lanthanumhydroxide": {
+	color: "#FFFFFF",
+	behavior: behaviors.POWDER,
+	category: "powders",
+	state: "solid",
+	temp: 20
+},
+"lanthanumflouride": {
+	color: "#FFFFFF",
+	behavior: behaviors.POWDER,
+	category: "powders",
+	state: "solid",
+	temp: 20,
+	tempHigh: 1493,
+	stateHigh: "liquidlanthanumflouride"
+},
+"liquidlanthanumflouride": {
+	color: "#000000",
+	behavior: behaviors.LIQUID,
+	category: "liquids",
+	density: 5210,
+	state: "liquid",
+	temp: 1500,
+	tempLow: 1493,
+	stateHigh: "lanthanumflouride"
+},
+"liquidlanthanum": {
+	color: "#DADBDD",
+	behavior: behaviors.LIQUID,
+	category: "liquids",
+	density: 5940,
+	state: "liquid",
+	temp: 2192,
+	tempLow: 920,
+	stateLow: "lanthanum",
+	viscosity: 1
+},
+"cerium": {
+	color: "#DADBDD",
+	behavior: behaviors.WALL,
+	category: "solids",
+	state: "solid",
+	reactions: {
+		"water": {elem1:"hydrogen", elem2:null}
+},
+	temp: 20,
+	tempHigh: 795,
+	stateHigh: "liquidcerium"
+},
+"liquidcerium": {
+	color: ["#DADBDD", "#CFD0CF"],
+	behavior: behaviors.LIQUID,
+	category: "liquids",
+	density: 6550,
+	state: "liquid",
+	temp: 2119,
+	tempLow: 795,
+	stateLow: "cerium",
+	viscosity: 1
+},
+"gadolinium": {
+	color: "#DADBDD",
+	behavior: behaviors.WALL,
+	category: "solids",
+	state: "solid",
+	reactions: {
+		"oxygen": {elem1:"gadoliniumoxide", elem2:null},
+		"water": {elem1:"gadoliniumhydroxide", elem2:null}
+	},
+	temp: 20,
+	tempHigh: 1312,
+	stateHigh: "liquidgadolinium"
+},
+"gadoliniumoxide": {
+	color: "#FFFFFF",
+	behavior: behaviors.POWDER,
+	category: "powders",
+	density: 7407,
+	state: "solid",
+	temp: 20
+},
+"gadoliniumhydroxide": {
+	color: "#FFFFFF",
+	behavior: behaviors.POWDER,
+	category: "powders",
+	density: 5000,
+	state: "solid",
+	temp: 20
+},
+"liquidgadolinium": {
+	color: "#000000",
+	behavior: behaviors.LIQUID,
+	category: "liquids",
+	density: 7400,
+	state: "liquid",
+	temp: 2293,
+	tempLow: 1312,
+	stateLow: "gadolinium",
+	viscosity: 3.3
+},
+"cow": {
+	color: ["#FFFFFF", "#1D0200"],
+	behavior: [
+	"M3|XX|M3",
+	"M2|XX|M2",
+	"XX|M1|XX"
+	],
+	category: "life",
+	state: "solid",
+	reactions: {
+		"grass": {elem1:"milk", elem2:null}
+	},
+	temp: 20,
+	breakInto: ["blood", "bone", "rawmeat"]
+},
+"praseodymium": {
+	color: "#C0C0C0",
+	behavior: behaviors.WALL,
+	category: "solids",
+	state: "solid",
+	reactions: {
+		"water": {elem1:"praseodymiumhydroxide", elem2:null}
+	},
+	temp: 20,
+	tempHigh: 931,
+	stateHigh: "liquidpraseodymium",
+	burn: 100,
+	burnTime: 5,
+	burnInto: "praseodymiumoxide",
+	fireColor: ["#FFFF84", "#CCFF00"]
+},
+"praseodymiumoxide": {
+	color: "#88E788",
+	behavior: behaviors.POWDER,
+	category: "powders",
+	density: 6500,
+	state: "solid",
+	temp: 20
+},
+"praseodymiumhydroxide": {
+	color: "#88E788",
+	behavior: behaviors.POWDER,
+	category: "powders",
+	density: 4450,
+	state: "solid",
+	temp: 20
+},
+"liquidpraseodymium": {
+	color: ["#DADBDD", "#FFFFC5"],
+	behavior: behaviors.LIQUID,
+	category: "liquids",
+	density: 6500,
+	state: "liquid",
+	temp: 2031,
+	tempLow: 931,
+	stateLow: "praseodymium",
+	viscosity: 2
+},
 "rawchicken": {
 	color: "FFBEBE",
 	behavior: behaviors.WALL,
