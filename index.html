@@ -863,7 +863,46 @@ SEEDRISE: function(pixel) {
 		// burning - whether the element is burning on creation
 		// charge - charge of the element on creation
 		// hardness - chance of resisting damage (0-1)
+		// breakInto - what element turns into if broken
 		elements = {
+"ziconium_powder": {
+	color: ["#B8BBC0", "#C6C9CD", "#D4D6D9", "#E3E4E6", "#F1F1F2"],
+	behavior: behaviors.POWDER,
+	category: "states",
+	temp: 20
+},
+"zirconium_gas": {
+	color: "#D3D3D3",
+	behavior: behaviors.GAS,
+	category: "states",
+	temp: 5000,
+	tempLow: 4376,
+	stateLow: "liquid_zirconium",
+},
+"liquid_zirconium": {
+	color: ["#F57F17", "#F9A825", "#FBC02D", "#FDD835", "#FFEB3B"],
+	behavior: behaviors.LIQUID,
+	category: "states",
+	conduct: 0.015,
+	temp: 3115,
+	tempHigh: 4377,
+	tempLow: 1851,
+	stateHigh: "zirconium_gas",
+	stateLow: "zirconium",
+	charge: 0
+},
+"zirconium": {
+	color: ["#B8BBC0", "#C6C9CD", "#D4D6D9", "#E3E4E6", "#F1F1F2"],
+	behavior: behaviors.WALL,
+	category: "solids",
+	conduct: 0.04,
+	temp: 20,
+	tempHigh: 1852,
+	stateHigh: "liquid_zirconium",
+	charge: 0,
+	hardness: 0.5,
+	breakInto: "zirconium_powder"
+},
 "lanthanum": {
 	color: "#DADBDD",
 	behavior: behaviors.WALL,
@@ -872,10 +911,10 @@ SEEDRISE: function(pixel) {
 	reactions: {
 		"oxygen": {elem1:"lanthanumoxide", elem2:null},
 		"fluorine": {elem1:"lanthanumflouride", elem2:null}
-},
-temp: 20,
-tempHigh: 920,
-stateHigh: "liquidlanthanum"
+	},
+	temp: 20,
+	tempHigh: 920,
+	stateHigh: "liquidlanthanum"
 },
 "lanthanumoxide": {
 	color: "#FFFFFF",
