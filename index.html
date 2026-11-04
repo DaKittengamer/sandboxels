@@ -854,6 +854,7 @@ SEEDRISE: function(pixel) {
 		// tempHigh - highest temperature before state change (Celsius)
 		// tempLow - lowest temperature before state change (Celsius)
 		// stateHigh - element transformed into when tempHigh is reached
+		// onStateHigh - process performed when stateHigh is reached
 		// stateLow - element transformed into when tempLow is reached
 		// viscosity - how slow a liquid will move (higher = slower) (cps)
 		// burn - chance of burning per tick (0-100) (%)
@@ -864,12 +865,19 @@ SEEDRISE: function(pixel) {
 		// charge - charge of the element on creation
 		// hardness - chance of resisting damage (0-1)
 		// breakInto - what element turns into if broken
+		// hidden - hidden on default, unlock by creating it (true/false)
 		elements = {
 "ziconium_powder": {
 	color: ["#B8BBC0", "#C6C9CD", "#D4D6D9", "#E3E4E6", "#F1F1F2"],
 	behavior: behaviors.POWDER,
 	category: "states",
-	temp: 20
+	temp: 20,
+	tempHigh: 290,
+	stateHigh: "fire",
+	burn: 100,
+	burnTime: 1,
+	burnInto: ["explosion", "fire", "fire"],
+	fireColor: "#FFFFFF",
 },
 "zirconium_gas": {
 	color: "#D3D3D3",
