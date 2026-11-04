@@ -867,6 +867,36 @@ SEEDRISE: function(pixel) {
 		// breakInto - what element turns into if broken
 		// hidden - hidden on default, unlock by creating it (true/false)
 		elements = {
+"einsteinium_gas": {
+	color: "#000000",
+	behavior: behaviors.GAS,
+	temp: 1000,
+	tempLow: 995,
+	stateLow: "einsteinium_gas",
+	hidden: true
+},
+"liquid_einsteinium": {
+	color: ["#FADADD", "#FEF1F5", "#FFB5C0"],
+	behavior: behaviors.LIQUID,
+	category: "states",
+	temp: 938,
+	tempHigh: 996,
+	tempLow:859,
+	stateHigh: "einsteinium_gas",
+	stateLow: "liquid_einsteinium",
+	hidden: true
+},
+"einsteinium": {
+	color: "#C0C0C0",
+	behavior: behaviors.WALL,
+	category: "solids",
+	temp: 20,
+	tempHigh: 860,
+	stateHigh: "liquid_einsteinium"
+	behavior: [
+		"XX|CR"
+	]
+},
 "ziconium_powder": {
 	color: ["#B8BBC0", "#C6C9CD", "#D4D6D9", "#E3E4E6", "#F1F1F2"],
 	behavior: behaviors.POWDER,
@@ -878,6 +908,7 @@ SEEDRISE: function(pixel) {
 	burnTime: 1,
 	burnInto: ["explosion", "fire", "fire"],
 	fireColor: "#FFFFFF",
+	hidden: true
 },
 "zirconium_gas": {
 	color: "#D3D3D3",
@@ -886,6 +917,7 @@ SEEDRISE: function(pixel) {
 	temp: 5000,
 	tempLow: 4376,
 	stateLow: "liquid_zirconium",
+	hidden: true
 },
 "liquid_zirconium": {
 	color: ["#F57F17", "#F9A825", "#FBC02D", "#FDD835", "#FFEB3B"],
@@ -897,7 +929,8 @@ SEEDRISE: function(pixel) {
 	tempLow: 1851,
 	stateHigh: "zirconium_gas",
 	stateLow: "zirconium",
-	charge: 0
+	charge: 0,
+	hidden: true
 },
 "zirconium": {
 	color: ["#B8BBC0", "#C6C9CD", "#D4D6D9", "#E3E4E6", "#F1F1F2"],
